@@ -22,6 +22,12 @@ public class ProduckOrderMain {
         order3.quantity = 1;
         orders[2] = order3;
 
+        ProductOrder order4 = new ProductOrder();
+        order4.produckName = "콜라";
+        order4.price = 500;
+        order4.quantity = 10;
+        orders[3] = order4;
+
         int totalAmount = 0;
         for (ProductOrder order : orders) {
             System.out.println("상품명 : " + order.produckName + ", 가격 : " + order.price + ", 수량 : " + order.quantity);
